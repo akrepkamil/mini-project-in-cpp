@@ -22,9 +22,9 @@ do{
         cout<<"\n\t\t    *********** HANGMAN IN C++ ***********\n\n";
 
         cout<<"(E) Enter a word\n\n(C) Computer chooses word\n\n(A)";
-        cout<<"Add new word to list\n\n(Q) Quit\n\n\nEnter your choice (E - C - Q): ";
+        cout<<"Add new word to list\n\n(B)Added by\n\n(Q) Quit\n\n\nEnter your choice (E - C - B - Q): ";
         cin>>ch2;
-       }while (ch2!='C' && ch2!='c' && ch2!='E' && ch2!= 'e' &&
+       }while (ch2!='C' && ch2!='c' && ch2!='E' && ch2!= 'e' && ch2!='B' && ch2!= 'b' &&
                 ch2!='Q' && ch2!= 'q'&& ch2!='A' && ch2!= 'a');
     if (ch2 == 'Q' || ch2=='q')  exit (0);
 
@@ -69,6 +69,10 @@ do{
         fout.close();
 
     }
+   if (ch2 == 'B' || ch2=='b') {
+    cout << "CS2617 M.U." << endl;
+    cin.getline(word,25);
+   }
 
 
    if (ch2 == 'E' || ch2=='e')
