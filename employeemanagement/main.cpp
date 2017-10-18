@@ -18,6 +18,8 @@
 
 #include<cstdio>
 
+//#include <string>
+
 #define max 20
 
 using namespace std;
@@ -75,6 +77,14 @@ int main()
   switch(option)
 
   {
+   case 'a':
+         //system("cls");
+         char ttt;
+         cout << "CS2617 M.U." << endl;
+         cout << "Press any key and then enter to return main menu" << endl;
+         cin >> ttt;
+
+         break;
 
    case 'b':
 
@@ -173,6 +183,11 @@ cout<<"\n\t\t Press  s---->Search Arecord          ";
 cout<<"             ";
 
 cout<<"\n\t\t Press  n---->Sort The Table          ";
+
+cout<<"             ";
+
+cout<<"\n\t\t Press  a---->Added By         ";
+
 
 cout<<"             ";
 
