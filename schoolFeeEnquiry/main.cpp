@@ -77,17 +77,17 @@ void mainmenu()
  for(li=50;li>=30;li--)
  {
 
- gotoxy(li,30);
+ gotoxy(li,33);
  Sleep(30);
  printf("*");
  }
- for(lp=15;lp<30;lp++)
+ for(lp=15;lp<33;lp++)
  {
  gotoxy(30,lp);
  Sleep(100);
  printf("|");
  }
- for(lp=29;lp>=15;lp--)
+ for(lp=32;lp>=15;lp--)
  {
  gotoxy(50,lp);
  Sleep(100);
@@ -110,11 +110,22 @@ void mainmenu()
  printf("H: HELP");
  gotoxy(35,28);
 
+ printf("A: ADDED BY");
+ gotoxy(35,31);
+
  printf("Q: QUIT");
  choice=getch();
  ch=toupper(choice);
  switch(ch)
  {
+ case'A':
+    system("cls") ;
+    gotoxy(33,23) ;
+    cout <<"CS2617 M.U."<<endl;
+    cout <<"Press any key to return to Main Menu";
+    getch() ;
+    mainmenu();
+ break;
  case'F':fee.FEE_SLIP();
  break;
  case'M':fee.MODIFICATION();
