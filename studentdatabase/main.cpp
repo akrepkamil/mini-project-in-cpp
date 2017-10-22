@@ -45,7 +45,8 @@ struct student {
      cout << "\n \t\t\t 2. List   Records";
      cout << "\n \t\t\t 3. Modify Records";
      cout << "\n \t\t\t 4. Delete Records";
-     cout << "\n \t\t\t 5. Exit   Program";
+     cout << "\n \t\t\t 5. Added By";
+     cout << "\n \t\t\t 6. Exit   Program";
      cout << "\n\n";
      cout << "\t\t\t Select Your Choice :=> ";
      fflush(stdin);
@@ -152,8 +153,13 @@ struct student {
               }
 
               break;
+     case '5':
+       system("cls");
+       cout << "\n \t\t\t CS2617 M.U.\n\n\n";
+       system("pause");
+              break;
 
-              case '5':
+      case '6':
               fclose(fp);
               cout << "\n\n";
               cout << "\t\t     THANK YOU FOR USING THIS SOFTWARE";
